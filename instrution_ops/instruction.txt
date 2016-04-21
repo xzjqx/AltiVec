@@ -1,0 +1,5 @@
+vaddsws 24 23 22
+vsububm 9 8 6
+vavgsh 19 18 17
+vcmpequh 29 31 30
+vslb 16 15 14

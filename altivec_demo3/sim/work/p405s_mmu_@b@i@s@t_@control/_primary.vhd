@@ -1,0 +1,45 @@
+library verilog;
+use verilog.vl_types.all;
+entity p405s_mmu_BIST_Control is
+    port(
+        BIST_StateIn    : out    vl_logic_vector(0 to 3);
+        BIST_wrEn       : out    vl_logic;
+        BIST_rdEn       : out    vl_logic;
+        BIST_lookupEn   : out    vl_logic;
+        BIST_invalidate : out    vl_logic;
+        BIST_data       : out    vl_logic_vector(0 to 1);
+        BIST_addr       : out    vl_logic_vector(0 to 5);
+        decrementIn     : out    vl_logic;
+        BIST_V          : out    vl_logic;
+        iterIn          : out    vl_logic_vector(0 to 1);
+        ABIST_test      : out    vl_logic;
+        EPN_EA_Sel      : out    vl_logic_vector(0 to 1);
+        EPN_EA_Tid_Sel  : out    vl_logic_vector(0 to 1);
+        DSize_DT_Sel    : out    vl_logic_vector(0 to 1);
+        rotate_cntl     : out    vl_logic;
+        tagError        : out    vl_logic;
+        dataError       : out    vl_logic;
+        cbistError      : out    vl_logic;
+        cntZeroIn       : out    vl_logic;
+        cntDoneIn       : out    vl_logic;
+        lookup1_cntDoneIn: out    vl_logic;
+        LSSD_ArrayCClk_buf: out    vl_logic;
+        DVS             : out    vl_logic;
+        stop_evs        : out    vl_logic;
+        BIST_Done       : out    vl_logic;
+        BIST_StateL2    : in     vl_logic_vector(0 to 3);
+        TestM1          : in     vl_logic;
+        decrementL2     : in     vl_logic;
+        addrL2          : in     vl_logic_vector(0 to 5);
+        modeL2          : in     vl_logic_vector(0 to 1);
+        iterL2          : in     vl_logic_vector(0 to 1);
+        UTLB_Miss       : in     vl_logic;
+        UTLB_index      : in     vl_logic_vector(0 to 5);
+        tagComp         : in     vl_logic;
+        dataComp        : in     vl_logic;
+        cntZeroL2       : in     vl_logic;
+        cntDoneL2       : in     vl_logic;
+        lookup1_cntDoneL2: in     vl_logic;
+        LSSD_EVS        : in     vl_logic
+    );
+end p405s_mmu_BIST_Control;

@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1458371915 source:c:\users\xzjqx\desktop\计算机设计与调试\instrution_ops\instruction_ops.cpp
+	"ppc_altivec.h"
+
+1458371440 c:\users\xzjqx\desktop\计算机设计与调试\instrution_ops\ppc_altivec.h
+	<vector>
+
+1458154527 source:c:\users\xzjqx\desktop\计算机设计与调试\instrution_ops\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	"ppc_altivec.h"
+

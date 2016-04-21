@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity InstructionDecoder is
+    port(
+        clk             : in     vl_logic;
+        rst_n           : in     vl_logic;
+        APU_AltiVec_DcdHold: in     vl_logic;
+        in_Instruction  : in     vl_logic_vector(0 to 31);
+        in_LSResult     : in     vl_logic_vector(0 to 127);
+        in_PUResult     : in     vl_logic_vector(0 to 127);
+        in_VSFXResult   : in     vl_logic_vector(0 to 127);
+        in_VCFXResult   : in     vl_logic_vector(0 to 127);
+        in_VFPUResult   : in     vl_logic_vector(0 to 127);
+        in_RFAReadData  : in     vl_logic_vector(0 to 127);
+        in_RFBReadData  : in     vl_logic_vector(0 to 127);
+        in_RFCReadData  : in     vl_logic_vector(0 to 127);
+        Dcd_LS_cs       : out    vl_logic;
+        Dcd_LSType      : out    vl_logic_vector(0 to 4);
+        Dcd_LSRaEn      : out    vl_logic;
+        Dcd_PU_cs       : out    vl_logic;
+        Dcd_PUType      : out    vl_logic_vector(0 to 7);
+        Dcd_VALU_cs     : out    vl_logic_vector(0 to 1);
+        Dcd_VALUType    : out    vl_logic_vector(0 to 9);
+        Dcd_en_mtvscr   : out    vl_logic;
+        Dcd_en_mfvscr   : out    vl_logic;
+        Dcd_RFReadRegAEn: out    vl_logic;
+        Dcd_RFReadRegBEn: out    vl_logic;
+        Dcd_RFReadRegCEn: out    vl_logic;
+        Dcd_RF_VRA      : out    vl_logic_vector(0 to 4);
+        Dcd_RF_VRB      : out    vl_logic_vector(0 to 4);
+        Dcd_RF_VRC      : out    vl_logic_vector(0 to 4);
+        Dcd_XTargetRegister: out    vl_logic_vector(0 to 4);
+        Dcd_AOperandMux : out    vl_logic_vector(0 to 127);
+        Dcd_BOperandMux : out    vl_logic_vector(0 to 127);
+        Dcd_COperandMux : out    vl_logic_vector(0 to 127);
+        Dcd_ValidAltivecOp: out    vl_logic;
+        Dcd_APUCR6En    : out    vl_logic;
+        Dcd_ReadGPRA_En : out    vl_logic;
+        Dcd_ReadGPRB_En : out    vl_logic;
+        Dcd_ExeBusy     : out    vl_logic
+    );
+end InstructionDecoder;

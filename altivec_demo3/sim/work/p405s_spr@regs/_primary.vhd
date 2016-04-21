@@ -1,0 +1,43 @@
+library verilog;
+use verilog.vl_types.all;
+entity p405s_sprRegs is
+    port(
+        IFB_sprDataBus  : out    vl_logic_vector(0 to 31);
+        ctrEq1          : out    vl_logic;
+        ctrEq2          : out    vl_logic;
+        ctrL2           : out    vl_logic_vector(0 to 31);
+        evprL2          : out    vl_logic_vector(0 to 15);
+        exeMtCtr        : out    vl_logic;
+        exeMtLr         : out    vl_logic;
+        iac1L2          : out    vl_logic_vector(0 to 29);
+        iac2L2          : out    vl_logic_vector(0 to 29);
+        iac3L2          : out    vl_logic_vector(0 to 29);
+        iac4L2          : out    vl_logic_vector(0 to 29);
+        linkL2          : out    vl_logic_vector(0 to 31);
+        lrCtrNormal_Neg : out    vl_logic_vector(0 to 29);
+        lrCtrSe_Neg     : out    vl_logic_vector(0 to 29);
+        srr02_Neg       : out    vl_logic_vector(0 to 29);
+        CB              : in     vl_logic;
+        EXE_sprDataBus  : in     vl_logic_vector(0 to 31);
+        PCL_sprHold     : in     vl_logic;
+        VCT_swap01      : in     vl_logic;
+        VCT_swap23      : in     vl_logic;
+        VCT_wbRfci      : in     vl_logic;
+        coreResetL2     : in     vl_logic;
+        crL2            : in     vl_logic_vector(0 to 31);
+        exeBcL2         : in     vl_logic;
+        exeBrAndLink    : in     vl_logic;
+        exeDataBO_2     : in     vl_logic;
+        exeDataSprf     : in     vl_logic_vector(11 to 20);
+        exeIar          : in     vl_logic_vector(0 to 29);
+        exeMfsprL2      : in     vl_logic;
+        exeMtsprL2      : in     vl_logic;
+        refetchPipeAddr : in     vl_logic_vector(0 to 29);
+        saveForTraceE1  : in     vl_logic;
+        saveForTraceE2  : in     vl_logic;
+        seCtrSt         : in     vl_logic;
+        swapEnable      : in     vl_logic;
+        tracePipeHold   : in     vl_logic;
+        wbMtCtrL2       : in     vl_logic
+    );
+end p405s_sprRegs;

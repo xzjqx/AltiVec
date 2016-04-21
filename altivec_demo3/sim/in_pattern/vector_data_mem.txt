@@ -1,0 +1,28 @@
+611ec82d8a0f2346ecc471303f2dd3af
+85064ff4d90177a3ddd07472b9b3c2e1//random test for vaddsws
+7fffffff7fffffff7fffffff7fffffff
+7fffffff00000000ffffffff80000000//corner test for vaddsws
+00000000000000000000000000000000
+7fffffff00000000ffffffff80000000//corner test for vaddsws
+ffffffffffffffffffffffff7fffffff
+7fffffff00000000ffffffff80000000//corner test for vaddsws
+80000000800000008000000080000000
+7fffffff00000000ffffffff80000000//corner test for vaddsws
+e81e49f0c3caf53b4ec3be0992a9e192
+1c49833d89e5d36a9f96bab06a33f4ba//random test for vsububm
+ffff0000ffff0000ffff0000ffff0000
+ff00ff00ff00ff00ff00ff00ff00ff00//corner test for vsububm
+ba1b0ef03a889e7ba698298a7adaa0f5
+dac40e18598efe9e979f2bccf844b0f3//random test for vavgsh
+7fff7fff7fff7fff0000000000000000
+7fff0000ffff80007fff0000ffff8000//corner test for vavgsh
+ffffffffffffffff8080808080808080
+7fff0000ffff80007fff0000ffff8000//corner test for vavgsh
+cec8f875d2f81c772c1e6524b0996cbe
+381505faf2d752d61d48730e970779d4//random test for vcmpequh
+ffffffff00000000ffffffff00000000
+ffff0000ffff0000ffff0000ffff0000//corner test for vcmpequh
+b3713e52bd38d739a1885843a3f7bfd9
+54a21c7b1736866970935a192b6dae5e//random test for vslb
+b3713e52bd38d739a1885843a3f7bfd9
+00010203040506070001020304050607//corner test for vslb
