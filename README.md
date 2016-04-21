@@ -4,11 +4,11 @@
 
 ### 指令功能设计
 采用C或C++语言，完成所要设计的5条指令的功能 -- [instruction_ops](https://github.com/xzjqx/AltiVec/tree/master/instruction_ops)
-    - vaddsws
-    - vsububm
-    - vavgsh
-    - vcmpequh
-    - vslb
+- vaddsws
+- vsububm
+- vavgsh
+- vcmpequh
+- vslb
 
 ### 模块设计
 采用Verilog HDL，设计PowerPC协处理器AltiVec模块中部分VSFX指令 -- [vsfx](https://github.com/xzjqx/AltiVec/tree/master/vsfx)
